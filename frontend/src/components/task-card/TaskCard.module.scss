@@ -1,0 +1,75 @@
+.card {
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    height: 250px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+
+        .bottom .split .badge {
+            opacity: 1;
+        }
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin: 0;
+        color: var(--color-text-secondary);
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-bottom: 16px;
+        color: var(--color-text-secondary);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-clamp: 4;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    .bottom {
+        margin-top: auto;
+
+        .progressBar {
+            background-color: var(--color-light);
+            border-radius: var(--border-radius);
+            height: 20px;
+            overflow: hidden;
+
+
+            .progress {
+                background-color: var(--color-primary);
+                height: 100%;
+            }
+        }
+
+        .split {
+            display: flex;
+            justify-content: space-between;
+
+            .dates {
+                font-size: 0.9rem;
+                color: var(--color-text-secondary);
+                font-weight: 700;
+            }
+
+            .badge {
+                transform: translateY(3px);
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                transition: opacity 0.3s ease;
+                opacity: 0;
+            }
+        }
+    }
+}

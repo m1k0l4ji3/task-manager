@@ -1,0 +1,32 @@
+.container{
+    background-image: var(--gradient-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    & > .main {
+        display: flex;
+        justify-content: center;
+        min-height: 80vh;
+        height: auto;
+        width: auto;
+        max-width: 100vw;
+        padding: 2rem 0;
+    }
+    
+    & > img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    & > .buttons {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+}
