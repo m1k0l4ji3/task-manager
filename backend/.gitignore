@@ -3,6 +3,7 @@
 
 *.db
 migrations
+pnpm-lock.yaml
 
 ### dotenv ###
 .env
